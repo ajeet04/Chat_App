@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/acs"
+        android:title="Settings"
+        android:icon="@drawable/user_s"
+        />
+    <item
+        android:id="@+id/all"
+        android:title="All User"
+        android:icon="@drawable/us"/>
+    <item
+        android:id="@+id/main_logout"
+        android:icon="@drawable/log"
+
+        android:title="@string/log_out" />
+    <item
+        android:id="@+id/main_status"
+        android:icon="@drawable/log"
+
+        android:title="Status" />
+</menu>

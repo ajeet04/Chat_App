@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.ajeetyadav.chat.SettingAccount">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#181818"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/profile" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/setpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+
+
+        android:src="@android:drawable/ic_menu_camera"
+        app:backgroundTint="#0B5345"
+        app:fabSize="mini"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_alignBottom="@+id/image"
+        android:layout_alignEnd="@+id/image" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/slist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

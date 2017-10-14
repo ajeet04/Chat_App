@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_light_pressed"
+    tools:context="com.example.ajeetyadav.chat.UserProfile">
+
+    <Button
+        android:id="@+id/decline"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sent"
+        android:layout_centerHorizontal="true"
+        android:text=" Decline Request" />
+
+    <TextView
+        android:id="@+id/cUserStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/displayName"
+        android:layout_below="@+id/displayName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:text="Current User Status"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+        android:text="Number of friends"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="228dp"
+        android:layout_below="@+id/cUserStatus"
+        android:layout_alignStart="@+id/displayName" />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/UserPic"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:text="Display Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <ImageView
+        android:id="@+id/UserPic"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/profile"
+        app:srcCompat="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/sent"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent Request"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/count"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
