@@ -9,7 +9,9 @@ public class mFriends {
    public  String thumb_image;
     public String name;
     public String type;
-    public mFriends(){}
+    public mFriends(){
+
+    }
     public mFriends(String date,String name,String thumb_image,String type){
         this.date=date;
         this.name=name;
